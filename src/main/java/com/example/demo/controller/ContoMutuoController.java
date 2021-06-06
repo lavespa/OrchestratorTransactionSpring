@@ -41,7 +41,7 @@ public class ContoMutuoController {
 	public ContoMutuo apriCM(@RequestBody CreateContoMutuoRequest request) {
 		
 		LineeCredito lineaCr = request.getLineaCr();
-		CaratteristicheContoMutuo caratCm = request.getCaratCm();
+		CaratteristicheContoMutuo caratCm = request.getCaratCm();//Init ccm
 		String descrCm = request.getDescriptionCM();
 		double capitalInv = request.getCapitalInvestment();
 		
