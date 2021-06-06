@@ -47,16 +47,16 @@ public class ContoMutuoController {
 		
 		//Effettuo il salvataggio dell'apertura conto mutuo
 		
-		ContoMutuo cm = null;
+		ContoMutuo cm2 = null;
 		try {
-			cm = orchestrService.apriContoMutuo(lineaCr, caratCm, descrCm, capitalInv);
+			cm2 = orchestrService.apriContoMutuo(lineaCr, caratCm, descrCm, capitalInv);
 		} catch (InvalidContoMutuoException e) {
 			logger.error("Errore in apertura mutuo",e);
 			throw new InvalidContoMutuoException(e.getMessage());
 		}
 		
 		
-		return cm;
+		return cm2;
 		
 	}
 							 
