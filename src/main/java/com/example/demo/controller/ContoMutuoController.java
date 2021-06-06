@@ -49,7 +49,7 @@ public class ContoMutuoController {
 		
 		ContoMutuo cm2 = null;
 		try {
-			cm2 = orchestrService.apriContoMutuo(lineaCr, caratCm, descrCm, capitalInv);
+			cm2 = new ContoMutuo();
 		} catch (InvalidContoMutuoException e) {
 			logger.error("Errore in apertura mutuo",e);
 			throw new InvalidContoMutuoException(e.getMessage());
