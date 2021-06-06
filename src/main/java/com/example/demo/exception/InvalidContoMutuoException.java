@@ -4,7 +4,7 @@
 package com.example.demo.exception;
 
 /**
- * @author Alex
+ * @author Alex Intrieri
  *
  */
 public class InvalidContoMutuoException extends RuntimeException  {
